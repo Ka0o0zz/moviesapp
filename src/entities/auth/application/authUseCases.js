@@ -1,4 +1,4 @@
-import { AuthValue } from "../domain/auth.value";
+import { AuthValue } from "../domain/auth.value.js";
 
 export class AuthUseCase {
   constructor(authRepository) {

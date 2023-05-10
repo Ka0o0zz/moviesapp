@@ -1,4 +1,4 @@
-import { ViewMakersValues } from "../domain/viewMakers.value";
+import { ViewMakersValues } from "../domain/viewMakers.value.js";
 
 export class ViewMakersUseCase {
   constructor(viewMakersRepository) {

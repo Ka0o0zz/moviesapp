@@ -1,4 +1,5 @@
-import { hash, genSaltSync, compareSync } from "bcryptjs";
+import pkg from "bcryptjs";
+const { hash, genSaltSync, compareSync } = pkg;
 
 export const encrypt = async (password) => {
   const salt = genSaltSync();

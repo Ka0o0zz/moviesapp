@@ -1,6 +1,6 @@
-import { pool } from "../../../../db/sql";
-import { encrypt, verifiedPassword } from "../../../../utils/bcrypt.handle";
-import { generateToken } from "../../../../utils/jwt";
+import { pool } from "../../../../db/sql.js";
+import { encrypt, verifiedPassword } from "../../../../utils/bcrypt.handle.js";
+import { generateToken } from "../../../../utils/jwt.js";
 
 export class SqlAuthRepository {
   async register(userIn) {

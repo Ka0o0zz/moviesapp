@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { SqlViewMakersRepository } from "../repository/sql.viewMaker.repository";
-import { ViewMakersUseCase } from "../../application/viewMakersUseCases";
-import { ViewMakersController } from "../controller/viewMakers.controllers";
+import { SqlViewMakersRepository } from "../repository/sql.viewMaker.repository.js";
+import { ViewMakersUseCase } from "../../application/viewMakersUseCases.js";
+import { ViewMakersController } from "../controller/viewMakers.controllers.js";
 
 const router = Router();
 

@@ -1,4 +1,4 @@
-import { MoviesFilters, MoviesValue } from "../domain/movies.value";
+import { MoviesFilters, MoviesValue } from "../domain/movies.value.js";
 
 export class MoviesUseCase {
   constructor(moviesRepository) {

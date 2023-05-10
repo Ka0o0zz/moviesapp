@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { AuthUseCase } from "../../application/authUseCases";
-import { AuthController } from "../controller/auth.controllers";
-import { SqlAuthRepository } from "../repository/sql.auth.repository";
+import { AuthUseCase } from "../../application/authUseCases.js";
+import { AuthController } from "../controller/auth.controllers.js";
+import { SqlAuthRepository } from "../repository/sql.auth.repository.js";
 
 const router = Router();
 

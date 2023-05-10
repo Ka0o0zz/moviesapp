@@ -1,5 +1,5 @@
 import moment from "moment";
-import { pool } from "../../../../db/sql";
+import { pool } from "../../../../db/sql.js";
 
 export class SqlViewMakersRepository {
   async createViewMakers(viewMakerIn) {

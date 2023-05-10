@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { MoviesUseCase } from "../../application/moviesUseCases";
-import { SqlMoviesRepository } from "../repository/sql.movies.repository";
-import { MoviesController } from "../controller/movies.controllers";
+import { MoviesUseCase } from "../../application/moviesUseCases.js";
+import { SqlMoviesRepository } from "../repository/sql.movies.repository.js";
+import { MoviesController } from "../controller/movies.controllers.js";
 
 const router = Router();
 

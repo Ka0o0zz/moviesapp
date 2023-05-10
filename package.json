@@ -2,10 +2,19 @@
   "name": "kubo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "esm": {
+    "extensions": [
+      ".js"
+    ]
+  },
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src/index.js -d dist",
     "start": "node src/index.js"
   },
   "author": "",

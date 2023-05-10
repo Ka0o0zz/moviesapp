@@ -1,12 +1,12 @@
 import express from "express";
 import cors from "cors";
 
-import authRoute from "./entities/auth/infrastructure/routes/entities.auth";
-import moviesRoute from "./entities/movies/infrastructure/routes/entities.movies";
-import viewMakersRoute from "./entities/viewMarkers/infrastructure/routes/entities.viewMakers";
-import { pool } from "./db/sql";
+import authRoute from "./entities/auth/infrastructure/routes/entities.auth.js";
+import moviesRoute from "./entities/movies/infrastructure/routes/entities.movies.js";
+import viewMakersRoute from "./entities/viewMarkers/infrastructure/routes/entities.viewMakers.js";
+import { pool } from "./db/sql.js";
 
-class Server {
+export class Server {
   apiPaths = {
     auth: "/api/auth",
     movies: "/api/movies",
@@ -46,5 +46,3 @@ class Server {
     });
   }
 }
-
-export default Server;
