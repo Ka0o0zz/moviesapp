@@ -7,7 +7,7 @@ export class AuthController {
     try {
       const response = await this.authUseCase.register(body);
       if (!response.ok) {
-        res.status(500).json({
+        res.status(400).json({
           ...response,
         });
         return;
@@ -28,7 +28,7 @@ export class AuthController {
     try {
       const response = await this.authUseCase.login(body);
       if (!response.ok) {
-        res.status(500).json({
+        res.status(400).json({
           ...response,
         });
         return;

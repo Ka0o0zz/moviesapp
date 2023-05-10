@@ -12,14 +12,13 @@ export class SqlMoviesRepository {
       };
     }
 
-    const [result] = await pool.query(
+    await pool.query(
       "INSERT INTO movie (name, description, category, release_date) VALUES (?, ?, ?, ?)",
       [name, description, category, release_date]
     );
 
     return {
       ok: true,
-      data: { result },
     };
   }
 

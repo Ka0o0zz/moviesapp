@@ -26,7 +26,6 @@ export class SqlAuthRepository {
     return {
       ok: true,
       data: {
-        id: result.insertId,
         userIn,
       },
     };

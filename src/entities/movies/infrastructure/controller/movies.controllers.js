@@ -6,7 +6,7 @@ export class MoviesController {
     try {
       const response = await this.moviesUseCase.create(body);
       if (!response.ok) {
-        res.status(500).json({
+        res.status(400).json({
           ...response,
         });
         return;
@@ -27,12 +27,12 @@ export class MoviesController {
     try {
       const response = await this.moviesUseCase.getMovie(query);
       if (!response.ok) {
-        res.status(500).json({
+        res.status(400).json({
           ...response,
         });
         return;
       }
-      res.status(201).json({
+      res.status(200).json({
         ...response,
       });
     } catch (error) {
@@ -48,12 +48,12 @@ export class MoviesController {
     try {
       const response = await this.moviesUseCase.latestReleases();
       if (!response.ok) {
-        res.status(500).json({
+        res.status(400).json({
           ...response,
         });
         return;
       }
-      res.status(201).json({
+      res.status(200).json({
         ...response,
       });
     } catch (error) {

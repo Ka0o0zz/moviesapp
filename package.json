@@ -15,7 +15,8 @@
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src/index.js -d dist",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "mocha tests/api.test.js --exit"
   },
   "author": "",
   "license": "ISC",
@@ -36,6 +37,11 @@
     "@babel/core": "^7.21.8",
     "@babel/node": "^7.20.7",
     "@babel/preset-env": "^7.21.5",
-    "nodemon": "^2.0.22"
+    "chai": "^4.3.7",
+    "expect": "^29.5.0",
+    "jest": "^29.5.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
   }
 }

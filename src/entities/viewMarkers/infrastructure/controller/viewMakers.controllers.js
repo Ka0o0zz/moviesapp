@@ -28,12 +28,12 @@ export class ViewMakersController {
     try {
       const response = await this.viewMakersUseCase.getUsersWithViewedMovies();
       if (!response.ok) {
-        res.status(500).json({
+        res.status(400).json({
           ...response,
         });
         return;
       }
-      res.status(201).json({
+      res.status(200).json({
         ...response,
       });
     } catch (error) {
